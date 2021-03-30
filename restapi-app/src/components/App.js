@@ -1,7 +1,17 @@
+import React, { Component } from "react";
 import "./App.css";
+import UsersList from "./UsersList";
+import ButtonFetchUsers from "./ButtonFetchUsers";
 
-function App() {
-  return <div>RestApi Project</div>;
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <ButtonFetchUsers />
+        <UsersList />
+      </div>
+    );
+  }
 }
 
 export default App;
