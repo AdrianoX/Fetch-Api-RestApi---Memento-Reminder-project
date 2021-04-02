@@ -39,7 +39,8 @@ class App extends Component {
     return (
       <div>
         <ButtonFetchUsers click={this.handleDataFetch} />
-        {users.length > 0 ? <UsersList users={users} /> : users}
+        {users.length > 0 ? <UsersList users={users} /> : users} // CR b2
+        push/get
       </div>
     );
   }
